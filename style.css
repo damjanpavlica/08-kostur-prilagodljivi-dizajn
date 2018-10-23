@@ -1,0 +1,64 @@
+/* ELEMENTI */
+
+body {
+    margin: 0;
+}
+
+nav {
+    background: black; 
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+/* KLASE */
+
+.wrapper {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.krugovi-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.krug {
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* DESKTOP */
+
+@media (min-width: 800px) {
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .krugovi-wrapper {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .flex-between {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .half-width {
+        width: 48%;
+    }
+
+}
